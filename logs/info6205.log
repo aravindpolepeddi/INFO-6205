@@ -1,0 +1,37 @@
+2021-09-17 20:58:22 INFO  Benchmark_Timer - Begin run: Selection sort for 2000 Integers with 100 runs
+2021-09-17 20:58:22 INFO  Benchmarks - 0.000 ms
+2021-09-17 20:58:22 INFO  Benchmark_Timer - Begin run: Insertion sort for 2000 Integers with 100 runs
+2021-09-17 20:58:22 INFO  Benchmarks - 0.000 ms
+2021-09-17 20:58:22 INFO  Benchmark_Timer - Begin run: Dual-pivot Quick sort for 2000 Integers with 100 runs
+2021-09-17 20:58:22 INFO  Benchmarks - 0.000 ms
+2021-09-17 20:58:22 INFO  Benchmark_Timer - Begin run: 3-way Quick sort for 2000 Integers with 100 runs
+2021-09-17 20:58:22 INFO  Benchmarks - 0.000 ms
+2021-09-17 20:58:22 INFO  Benchmark_Timer - Begin run: Optimized Insertion sort for 2000 Integers with 100 runs
+2021-09-17 20:58:22 INFO  Benchmarks - 0.000 ms
+2021-09-17 20:58:22 INFO  Benchmark_Timer - Begin run: Merge sort for 2000 Integers with 100 runs
+2021-09-17 20:58:22 INFO  Benchmarks - 0.000 ms
+2021-09-17 20:58:22 INFO  Benchmark_Timer - Begin run: 3Shell sort for 2000 Integers with 100 runs
+2021-09-17 20:58:22 INFO  Benchmarks - 0.000 ms
+2021-09-17 20:58:22 INFO  Benchmark_Timer - Begin run: Intro sort for 2000 Integers with 100 runs
+2021-09-17 20:58:22 INFO  Benchmarks - 0.000 ms
+2021-09-17 20:58:22 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-17 20:58:22 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-17 20:58:22 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-17 20:58:22 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-17 20:58:22 DEBUG Config - Config.get(instrumenting, inversions) = 10
+2021-09-17 20:58:22 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-17 20:58:22 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-17 20:58:22 DEBUG Config - Config.get(helper, cutoff) = 1
+2021-09-17 20:58:22 DEBUG Config - Config.get(mergesort, insurance) = false
+2021-09-17 20:58:22 DEBUG Config - Config.get(mergesort, nocopy) = false
+2021-09-17 20:58:22 DEBUG InstrumentedHelper - Closing Helper: test with statPack: null
+2021-09-17 20:58:22 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-17 20:58:22 INFO  BucketSort - 5
+2021-09-17 20:58:22 INFO  BucketSort - 24961463
+2021-09-17 20:58:24 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 2 runs
+2021-09-17 20:58:24 DEBUG Config - Config.get(helper, junk) = null
+2021-09-17 20:58:24 DEBUG Config - Config.get(main, version) = null
+2021-09-17 20:58:24 DEBUG LazyLoggerTest - Hello debug message
+2021-09-17 20:58:24 INFO  SorterBenchmark - run: sort 4 elements using SorterBenchmark on class java.lang.String from 4 total elements and 100 runs using sorter: Insertion sort
+2021-09-17 20:58:24 INFO  Benchmark_Timer - Begin run: Helper for Insertion sort with 0 elements with 100 runs
+2021-09-17 20:58:24 INFO  TimeLogger - test .00
