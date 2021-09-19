@@ -80,12 +80,12 @@ public class RandomWalk {
             throw new RuntimeException("Syntax: RandomWalk steps [experiments]");
         //passed arg[0] m=0 via cmdline;
         int m = Integer.parseInt(args[0]);
-        //taking the average of m steps 100 times(average of 100 experiments)
-        int n = 100;
+        //taking the average of m steps 1000000 times(average of 1000000 experiments)
+        int n = 1000000;
         if (args.length > 1) n = Integer.parseInt(args[1]);
-        //take steps from m=10 to m=100 with each step having 100 experiments;
-        for(int i=0;i<100;i++){
-        m=m+10;
+        //take steps from m=5,10,15...100 with each step having 1000000 experiments;
+        for(int i=0;i<20;i++){
+        m=m+5;
             double meanDistance = randomWalkMulti(m, n);
             //System.out.println(meanDistance);
             System.out.println(m + " steps: " + meanDistance + " over " + n + " experiments");
