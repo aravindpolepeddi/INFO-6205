@@ -1,9 +1,8 @@
 From the graph, the equation can be expected to be of the form 
 
-d=a*ln(n)+c
+d=Sqrt(n)
 
 where d is the average Euclidian distance for some experiments
       n is the number of steps taken by the man (m ranges from 5,10,15...100)
-      c value can range from -INf to +INf (in this particular case, to is to be of the around 2.5, which raised the graph above origin to value around 2.5)
-      a is the multiplying factor(for -ve values of a, graph is seen in the 4th quadrant and +ve value if a, graph is seen in the first quadrant)
+      
 
