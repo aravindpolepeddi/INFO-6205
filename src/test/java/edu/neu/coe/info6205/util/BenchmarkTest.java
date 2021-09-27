@@ -17,8 +17,8 @@ public class BenchmarkTest {
 
     @Test // Slow
     public void testWaitPeriods() throws Exception {
-        int nRuns = 2;
-        int warmups = 2;
+        int nRuns = 10;
+        int warmups = 10;
         Benchmark<Boolean> bm = new Benchmark_Timer<>(
                 "testWaitPeriods", b -> {
             GoToSleep(100L, -1);

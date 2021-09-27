@@ -55,11 +55,48 @@ public class InsertionSort<X extends Comparable<X>> extends SortWithHelper<X> {
      * @param from the index of the first element to sort
      * @param to   the index of the first element not to sort
      */
+    //PART(2)
     public void sort(X[] xs, int from, int to) {
         final Helper<X> helper = getHelper();
+        for (int i=from; i<to; i++)
+            {
+                int j = i;
+                while (j>0 && helper.swapStableConditional(xs,j))
+                {
+                      j--;
+                }
 
-        // TO BE IMPLEMENTED
+            }
+        }
+
+    int[] vs= new int[]{10,9,8,7};
+    public void sortInvert(X[] vs, int from, int to) {
+        final Helper<X> helper = getHelper();
+        for (int i=from; i<to; i++)
+        {
+            int j = i;
+            while (j>0 && helper.swapStableConditional(vs,j))
+            {
+                j--;
+            }
+
+        }
     }
+
+    int[] ns= new int[]{1,2,6,9};
+    public void sortSemiOrdered(X[] ns, int from, int to) {
+        final Helper<X> helper = getHelper();
+        for (int i=from; i<to; i++)
+        {
+            int j = i;
+            while (j>0 && helper.swapStableConditional(ns,j))
+            {
+                j--;
+            }
+
+        }
+    }
+
 
     public static final String DESCRIPTION = "Insertion sort";
 

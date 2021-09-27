@@ -1,9 +1,12 @@
 package edu.neu.coe.info6205.util;
+import java.util.concurrent.TimeUnit;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
+import java.time.Clock;
+import java.time.Duration;
 
 public class Timer {
 
@@ -54,8 +57,31 @@ public class Timer {
      */
     public <T, U> double repeat(int n, Supplier<T> supplier, Function<T, U> function, UnaryOperator<T> preFunction, Consumer<U> postFunction) {
         logger.trace("repeat: with " + n + " runs");
+         double totalTime=0;
+
         // TO BE IMPLEMENTED: note that the timer is running when this method is called and should still be running when it returns.
-        return 0;
+        //the number of times to be repeated
+        for(int i=0;i<=n;i++){
+            //get the values from supplier
+            T values = supplier.get();
+            //use the vales on the prefunction;Cannot invoke "java.util.function.Consumer.accept(Object)" because "preFunction" is null
+            if(preFunction!=null)
+            preFunction.apply(values);
+
+            //doing benchmark here for function
+            long startTime= Timer.getClock();
+            U sortedvalues= function.apply(values);
+            long endTime=Timer.getClock();
+
+            //apply values on postfunction;Cannot invoke "java.util.function.Consumer.accept(Object)" because "postFunction" is null
+            if(postFunction!=null)
+            postFunction.accept(sortedvalues);
+
+            totalTime=totalTime+(endTime-startTime);
+            //increment the lap
+            lap();
+        }
+        return totalTime/laps;
     }
 
     /**
@@ -174,7 +200,9 @@ public class Timer {
      */
     private static long getClock() {
         // TO BE IMPLEMENTED
-        return 0;
+        //long sysclock = TimeUnit.MILLISECONDS.convert(System.nanoTime(), TimeUnit.NANOSECONDS);
+        //return sysclock;
+        return System.nanoTime();
     }
 
     /**
@@ -185,8 +213,11 @@ public class Timer {
      * @return the corresponding number of milliseconds.
      */
     private static double toMillisecs(long ticks) {
+        
         // TO BE IMPLEMENTED
-        return 0;
+        return ticks/1000000d;
+        //long durationInMs = TimeUnit.MILLISECONDS.convert(ticks, TimeUnit.NANOSECONDS);
+        ///return durationInMs;
     }
 
     final static LazyLogger logger = new LazyLogger(Timer.class);

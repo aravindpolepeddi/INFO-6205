@@ -35,3 +35,185 @@
 2021-09-17 20:58:24 INFO  SorterBenchmark - run: sort 4 elements using SorterBenchmark on class java.lang.String from 4 total elements and 100 runs using sorter: Insertion sort
 2021-09-17 20:58:24 INFO  Benchmark_Timer - Begin run: Helper for Insertion sort with 0 elements with 100 runs
 2021-09-17 20:58:24 INFO  TimeLogger - test .00
+2021-09-26 12:34:14 DEBUG Config - Config.get(sortbenchmark, version) = 1.0.0 (sortbenchmark)
+2021-09-26 12:34:14 INFO  SortBenchmark - SortBenchmark.main: 1.0.0 (sortbenchmark) with word counts: []
+2021-09-26 12:34:14 WARN  SortBenchmark - No word counts specified on the command line
+2021-09-26 12:34:14 INFO  Benchmark_Timer - Begin run: intArraysorter with 100 runs
+2021-09-26 12:34:14 INFO  TimeLogger - Raw time per run (mSec):  .00
+2021-09-26 12:34:14 INFO  TimeLogger - Normalized time per run (n log n):  .00
+2021-09-26 12:34:14 INFO  Benchmark_Timer - Begin run: integerArraysorter with 100 runs
+2021-09-26 12:34:14 INFO  TimeLogger - Raw time per run (mSec):  .00
+2021-09-26 12:34:14 INFO  TimeLogger - Normalized time per run (n log n):  .00
+2021-09-26 12:34:14 INFO  SortBenchmark - Beginning String sorts
+2021-09-26 12:34:14 INFO  SortBenchmarkHelper - Testing with words: 2,998 from 3000-common-words.txt
+2021-09-26 12:34:14 INFO  SortBenchmark - Testing pure sorts with 5,000 runs of sorting 4,000 words
+2021-09-26 12:34:14 DEBUG Config - Config.get(benchmarkstringsorters, puresystemsort) = false
+2021-09-26 12:34:14 DEBUG Config - Config.get(benchmarkstringsorters, mergesort) = false
+2021-09-26 12:34:14 DEBUG Config - Config.get(benchmarkstringsorters, quicksort3way) = false
+2021-09-26 12:34:14 DEBUG Config - Config.get(benchmarkstringsorters, quicksort) = true
+2021-09-26 12:34:14 DEBUG Config - Config.get(helper, instrument) = false
+2021-09-26 12:34:14 INFO  SorterBenchmark - run: sort 4,000 elements using SorterBenchmark on class java.lang.String from 2,998 total elements and 5,000 runs using sorter: QuickSort dual pivot
+2021-09-26 12:34:14 INFO  Benchmark_Timer - Begin run: Helper for QuickSort dual pivot with 4000 elements with 5,000 runs
+2021-09-26 12:34:14 INFO  TimeLogger - Raw time per run (mSec):  .00
+2021-09-26 12:34:14 INFO  TimeLogger - Normalized time per run (n log n):  .00
+2021-09-26 12:34:14 DEBUG Config - Config.get(benchmarkstringsorters, introsort) = false
+2021-09-26 12:34:14 DEBUG Config - Config.get(benchmarkstringsorters, insertionsort) = false
+2021-09-26 12:34:14 INFO  SortBenchmarkHelper - Testing with words: 24,017 from zho-simp-tw_web_2014_10K-sentences.txt
+2021-09-26 12:34:14 INFO  SortBenchmark - Testing pure sorts with 1,000 runs of sorting 5,000 words
+2021-09-26 12:34:14 INFO  SorterBenchmark - run: sort 5,000 elements using SorterBenchmark on class java.lang.String from 24,017 total elements and 1,000 runs using sorter: QuickSort dual pivot
+2021-09-26 12:34:14 INFO  Benchmark_Timer - Begin run: Helper for QuickSort dual pivot with 5000 elements with 1,000 runs
+2021-09-26 12:34:14 INFO  TimeLogger - Raw time per run (mSec):  .00
+2021-09-26 12:34:14 INFO  TimeLogger - Normalized time per run (n log n):  .00
+2021-09-26 12:34:14 INFO  SortBenchmark - Beginning LocalDateTime sorts
+2021-09-26 12:34:14 DEBUG Config - Config.get(benchmarkdatesorters, timsort) = false
+2021-09-26 12:54:51 DEBUG Config - Config.get(sortbenchmark, version) = 1.0.0 (sortbenchmark)
+2021-09-26 12:54:51 INFO  SortBenchmark - SortBenchmark.main: 1.0.0 (sortbenchmark) with word counts: []
+2021-09-26 12:54:51 WARN  SortBenchmark - No word counts specified on the command line
+2021-09-26 12:54:51 INFO  Benchmark_Timer - Begin run: intArraysorter with 100 runs
+2021-09-26 12:54:51 INFO  TimeLogger - Raw time per run (mSec):  .00
+2021-09-26 12:54:51 INFO  TimeLogger - Normalized time per run (n log n):  .00
+2021-09-26 12:54:51 INFO  Benchmark_Timer - Begin run: integerArraysorter with 100 runs
+2021-09-26 12:54:51 INFO  TimeLogger - Raw time per run (mSec):  .00
+2021-09-26 12:54:51 INFO  TimeLogger - Normalized time per run (n log n):  .00
+2021-09-26 12:54:51 INFO  SortBenchmark - Beginning String sorts
+2021-09-26 12:54:51 INFO  SortBenchmarkHelper - Testing with words: 2,998 from 3000-common-words.txt
+2021-09-26 12:54:51 INFO  SortBenchmark - Testing pure sorts with 5,000 runs of sorting 4,000 words
+2021-09-26 12:54:51 DEBUG Config - Config.get(benchmarkstringsorters, puresystemsort) = false
+2021-09-26 12:54:51 DEBUG Config - Config.get(benchmarkstringsorters, mergesort) = false
+2021-09-26 12:54:51 DEBUG Config - Config.get(benchmarkstringsorters, quicksort3way) = false
+2021-09-26 12:54:51 DEBUG Config - Config.get(benchmarkstringsorters, quicksort) = true
+2021-09-26 12:54:51 DEBUG Config - Config.get(helper, instrument) = false
+2021-09-26 12:54:51 INFO  SorterBenchmark - run: sort 4,000 elements using SorterBenchmark on class java.lang.String from 2,998 total elements and 5,000 runs using sorter: QuickSort dual pivot
+2021-09-26 12:54:51 INFO  Benchmark_Timer - Begin run: Helper for QuickSort dual pivot with 4000 elements with 5,000 runs
+2021-09-26 12:54:51 INFO  TimeLogger - Raw time per run (mSec):  .00
+2021-09-26 12:54:51 INFO  TimeLogger - Normalized time per run (n log n):  .00
+2021-09-26 12:54:51 DEBUG Config - Config.get(benchmarkstringsorters, introsort) = false
+2021-09-26 12:54:51 DEBUG Config - Config.get(benchmarkstringsorters, insertionsort) = false
+2021-09-26 12:54:52 INFO  SortBenchmarkHelper - Testing with words: 24,017 from zho-simp-tw_web_2014_10K-sentences.txt
+2021-09-26 12:54:52 INFO  SortBenchmark - Testing pure sorts with 1,000 runs of sorting 5,000 words
+2021-09-26 12:54:52 INFO  SorterBenchmark - run: sort 5,000 elements using SorterBenchmark on class java.lang.String from 24,017 total elements and 1,000 runs using sorter: QuickSort dual pivot
+2021-09-26 12:54:52 INFO  Benchmark_Timer - Begin run: Helper for QuickSort dual pivot with 5000 elements with 1,000 runs
+2021-09-26 12:54:52 INFO  TimeLogger - Raw time per run (mSec):  .00
+2021-09-26 12:54:52 INFO  TimeLogger - Normalized time per run (n log n):  .00
+2021-09-26 12:54:52 INFO  SortBenchmark - Beginning LocalDateTime sorts
+2021-09-26 12:54:52 DEBUG Config - Config.get(benchmarkdatesorters, timsort) = false
+2021-09-26 16:40:25 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 16:40:25 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 16:40:25 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 16:40:25 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 16:40:25 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 16:40:25 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 16:40:25 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 16:40:25 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 16:40:25 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 16:57:27 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 16:57:27 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 16:57:27 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 16:57:27 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 16:57:27 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 16:57:27 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 16:57:27 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 16:57:27 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 16:57:27 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 16:59:26 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 16:59:26 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 16:59:26 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 16:59:26 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 16:59:26 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 16:59:26 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 16:59:26 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 16:59:26 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 16:59:26 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 16:59:46 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 16:59:46 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 16:59:46 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 16:59:46 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 16:59:46 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 16:59:46 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 16:59:46 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 16:59:46 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 16:59:46 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 17:12:31 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 17:12:31 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 17:12:31 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 17:12:31 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 17:12:31 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 17:12:31 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 17:12:31 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 17:12:31 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 17:12:31 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 17:12:36 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 17:12:36 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 17:12:36 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 17:12:36 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 17:12:36 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 17:12:36 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 17:12:36 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 17:12:36 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 17:12:36 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 17:12:46 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 17:12:46 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 17:12:46 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 17:12:46 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 17:12:46 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 17:12:46 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 17:12:46 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 17:12:46 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 17:12:46 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 20:04:25 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 2 runs
+2021-09-26 20:30:02 DEBUG Config - Config.get(main, version) = null
+2021-09-26 20:30:12 DEBUG Config - Config.get(helper, seed) = 
+2021-09-26 20:30:12 DEBUG Config - Config.get(helper, junk) = null
+2021-09-26 20:30:12 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 20:30:12 DEBUG Config - Config.get(instrumenting, inversions) = 10
+2021-09-26 20:30:12 DEBUG Config - Config.get(main, version) = null
+2021-09-26 20:30:28 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 2 runs
+2021-09-26 20:56:52 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 2 runs
+2021-09-26 21:08:12 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 2 runs
+2021-09-26 21:10:13 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 2 runs
+2021-09-26 21:12:58 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 2 runs
+2021-09-26 21:14:42 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 3 runs
+2021-09-26 21:19:59 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 10 runs
+2021-09-26 21:21:16 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 21:21:16 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 21:21:16 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 21:21:16 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 21:21:16 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 21:21:16 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 21:21:16 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 21:21:16 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 21:21:16 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 21:21:40 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 21:21:40 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 21:21:40 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 21:21:40 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 21:21:40 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 21:21:40 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 21:21:40 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 21:21:40 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 21:21:40 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 21:22:58 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 21:22:58 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 21:22:58 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 21:22:58 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 21:22:58 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 21:22:58 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 21:22:58 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 21:22:58 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 21:22:58 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 21:26:29 DEBUG LazyLoggerTest - Hello debug message
+2021-09-26 21:29:27 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 10 runs
+2021-09-26 21:35:57 DEBUG Config - Config.get(helper, instrument) = true
+2021-09-26 21:35:57 DEBUG Config - Config.get(helper, seed) = 0
+2021-09-26 21:35:57 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-09-26 21:35:57 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-09-26 21:35:57 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-09-26 21:35:57 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-09-26 21:35:57 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-09-26 21:35:57 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-09-26 21:35:57 DEBUG Config - Config.get(helper, cutoff) = 
+2021-09-26 21:42:39 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 10 runs
+2021-09-26 22:51:59 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 10 runs
+2021-09-26 22:53:23 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 10 runs
+2021-09-26 22:55:11 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 10 runs
+2021-09-26 22:55:27 INFO  Benchmark_Timer - Begin run: testWaitPeriods with 10 runs

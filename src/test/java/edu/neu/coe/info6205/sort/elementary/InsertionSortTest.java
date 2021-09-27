@@ -60,6 +60,19 @@ public class InsertionSortTest {
     }
 
     @Test
+    public void testStaticInsertionSortInvert() throws IOException {
+        final List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        Integer[] xs = list.toArray(new Integer[0]);
+        InsertionSort.sort(xs);
+        assertTrue(xs[0] < xs[1] && xs[1] < xs[2] && xs[2] < xs[3]);
+    }
+
+
+    @Test
     public void testMutatingInsertionSort() throws IOException {
         final List<Integer> list = new ArrayList<>();
         list.add(3);
