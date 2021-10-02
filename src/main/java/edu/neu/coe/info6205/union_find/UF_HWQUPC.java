@@ -1,4 +1,4 @@
-/**
+/*
  * Original code:
  * Copyright © 2000–2017, Robert Sedgewick and Kevin Wayne.
  * <p>
@@ -81,8 +81,13 @@ public class UF_HWQUPC implements UF {
     public int find(int p) {
         validate(p);
         int root = p;
-        // TO BE IMPLEMENTED
+        //next while loop redundant,since you're already assigning (during start) that each node is parent of itself
+        while(root!=parent[root]){
+            root=parent[root];
+        }
+        if(pathCompression){doPathCompression(p);}
         return root;
+
     }
 
     /**
@@ -169,6 +174,14 @@ public class UF_HWQUPC implements UF {
 
     private void mergeComponents(int i, int j) {
         // TO BE IMPLEMENTED make shorter root point to taller one
+        int rooti= find(i);
+        int rootj=find(j);
+        int height1=height[rooti];
+        int height2=height[rootj];
+        //update height later ??
+        if(height1>=height2){updateParent(rootj,rooti); updateHeight(rooti,rootj);}
+        else{updateParent(rooti,rootj); updateHeight(rootj,rooti);}
+        count--;
     }
 
     /**
@@ -176,5 +189,32 @@ public class UF_HWQUPC implements UF {
      */
     private void doPathCompression(int i) {
         // TO BE IMPLEMENTED update parent to value of grandparent
+        validate(i);
+        setPathCompression(false);
+        updateParent(i,find(i));
+        setPathCompression(true);
+        //int root=find(i);
+        //while(i!=root){
+          //  updateParent(parent[i],parent[parent[i]]);}
+        //height needs to be reduced ??
     }
+
+    public static void main(String[] args){
+        if (args.length == 1)
+            throw new RuntimeException("Enter 2 inputs,one for components and other for enabling path compression");
+        //passed arg[0]  via cmdline;
+        int n = Integer.parseInt(args[0]);
+    //creating n components
+            if (n < 0) throw new IllegalArgumentException();
+            else{
+                UF_HWQUPC test =new UF_HWQUPC(n,Boolean.parseBoolean(args[1]));
+               //test.connect(ra);
+            }
+
+
+
+
+        }
+
+
 }
