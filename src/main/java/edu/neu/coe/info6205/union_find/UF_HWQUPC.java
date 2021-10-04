@@ -7,7 +7,10 @@
  */
 package edu.neu.coe.info6205.union_find;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Height-weighted Quick Union with Path Compression
@@ -20,7 +23,8 @@ public class UF_HWQUPC implements UF {
      * @param q the integer representing the other site
      */
     public void connect(int p, int q) {
-        if (!isConnected(p, q)) union(p, q);
+        if (!isConnected(p, q)){union(p, q);}
+        //else{System.out.println("already connected"+p+"and"+q);}
     }
 
     /**
@@ -78,11 +82,11 @@ public class UF_HWQUPC implements UF {
      * @return the component identifier for the component containing site {@code p}
      * @throws IllegalArgumentException unless {@code 0 <= p < n}
      */
+    //get the root for passed value, if pathcompression enabled,point the value directly to the root
     public int find(int p) {
         validate(p);
         int root = p;
-        //next while loop redundant,since you're already assigning (during start) that each node is parent of itself
-        while(root!=parent[root]){
+        while(root!=getParent(root)){
             root=parent[root];
         }
         if(pathCompression){doPathCompression(p);}
@@ -114,8 +118,9 @@ public class UF_HWQUPC implements UF {
      *                                  both {@code 0 <= p < n} and {@code 0 <= q < n}
      */
     public void union(int p, int q) {
-        // CONSIDER can we avoid doing find again?
+        // CONSIDER can we avoid doing find again? //yes,pass the roots instead of values
         mergeComponents(find(p), find(q));
+        //System.out.println("conncting"+p+"and"+q);
         count--;
     }
 
@@ -180,8 +185,8 @@ public class UF_HWQUPC implements UF {
         int height2=height[rootj];
         //update height later ??
         if(height1>=height2){updateParent(rootj,rooti); updateHeight(rooti,rootj);}
-        else{updateParent(rooti,rootj); updateHeight(rootj,rooti);}
-        count--;
+        else {updateParent(rooti,rootj); updateHeight(rootj,rooti);}
+
     }
 
     /**
@@ -193,28 +198,78 @@ public class UF_HWQUPC implements UF {
         setPathCompression(false);
         updateParent(i,find(i));
         setPathCompression(true);
-        //int root=find(i);
-        //while(i!=root){
-          //  updateParent(parent[i],parent[parent[i]]);}
-        //height needs to be reduced ??
+
     }
 
+    public static int count(int n,boolean boolval) {
+        int connections = 0;
+        UF_HWQUPC test;
+        Random rand = new Random();
+        if(boolval)test =new UF_HWQUPC(n,true);
+        else{test =new UF_HWQUPC(n);}
+        //till there is only 1 component left
+        while (test.count > 1) {
+            int number1 = rand.nextInt(n);
+            int number2 = rand.nextInt(n);
+            while (number1 == number2) {number1 = rand.nextInt(n);}
+            test.connect(number1, number2);
+            connections++;
+        }
+        return connections;
+    }
+
+    //The below is for running the experiment by taking inputs from cmdline
+/*
     public static void main(String[] args){
-        if (args.length == 1)
-            throw new RuntimeException("Enter 2 inputs,one for components and other for enabling path compression");
+        if (args.length < 1)
+            throw new RuntimeException("Enter atleast 1 input,one for components and other for enabling path compression");
         //passed arg[0]  via cmdline;
         int n = Integer.parseInt(args[0]);
-    //creating n components
-            if (n < 0) throw new IllegalArgumentException();
-            else{
-                UF_HWQUPC test =new UF_HWQUPC(n,Boolean.parseBoolean(args[1]));
-               //test.connect(ra);
+        if (n < 2) throw new IllegalArgumentException();
+        boolean boolval;
+        if(args.length<3&&Integer.parseInt(args[1])==1){boolval=true; count(n,true);} else{boolval=false;count(n,false);}
+        int[] edges = new int[10];
+        //running the experiment for 10 trials to get avg value
+        for (int t = 0; t < 10; t++) {
+            edges[t] = count(n,boolval);
+        }
+        int sum=0;
+        for (int t = 0; t < 10; t++) {
+            sum = sum+edges[t];
+        }
+        int average=sum/10;
+        System.out.println("for"+n+"values:"+average);
+
+}*/
+
+//run this to get tries for different values of n=100,200,400.... and plot the graph
+    public static void main(String[] args){
+        int n=100;
+        //run for diffrent values of n
+        for(int i=0;i<10;i++){
+            boolean boolval;
+            //in count ,create the object and return number of connections needed to make the number of components as 1
+            count(n,true);
+            int[] edges = new int[10];
+            //running the experiment for 10 trials to get avg value
+            for (int t = 0; t < 10; t++) {
+                edges[t] = count(n,true);  //setting path compression to true always(else uncomment the previous main method() and run)
             }
-
-
-
-
+            int sum=0;
+            for (int t = 0; t < 10; t++) {
+                sum = sum+edges[t];
+            }
+            int average=sum/10;
+            System.out.println("for"+n+"values:"+average);
+            n=n*2;
         }
 
 
+    }
+
 }
+
+
+
+
+

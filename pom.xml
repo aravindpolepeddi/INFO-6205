@@ -61,5 +61,10 @@
             <artifactId>ini4j</artifactId>
             <version>0.5.4</version>
         </dependency>
+        <dependency>
+            <groupId>org.diirt.javafx</groupId>
+            <artifactId>javafx-all</artifactId>
+            <version>3.1.7</version>
+        </dependency>
     </dependencies>
 </project>
