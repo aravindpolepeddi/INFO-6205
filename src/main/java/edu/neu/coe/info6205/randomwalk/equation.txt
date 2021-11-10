@@ -1,8 +1,0 @@
-From the graph, the equation can be expected to be of the form 
-
-d=Sqrt(n)
-
-where d is the average Euclidian distance for some experiments
-      n is the number of steps taken by the man (m ranges from 5,10,15...100)
-      
-
